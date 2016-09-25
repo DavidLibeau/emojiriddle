@@ -77,7 +77,7 @@ function game(){
               status: "GG @"+data.user.screen_name+" 🏆 \r\nhttps://twitter.com/"+data.user.screen_name+"/status/"+data.id_str,
               in_reply_to_status_id: data.id_str
             });
-            game();
+            setTimeout(game,30000);
         }else{
             console.log(removeMention(data.text)+"!="+riddle[0]);
             console.log(data);
